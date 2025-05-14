@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Animations Demo</h1>
+        
+        <div class="animated-box" id="animationTarget">
+            Click Here
+        </div>
+        
+        <div class="controls">
+            <button id="toggleAnimation">Toggle Animation</button>
+            <button id="changeColor">Change Background</button>
+            <button id="showPreferences">Preferences</button>
+        </div>
+        
+        <div class="preference-form hidden" id="preferenceForm">
+            <h2>User Preferences</h2>
+            <div>
+                <label for="bgColor">Background Color:</label>
+                <input type="color" id="bgColor" value="darkblue">
+            </div>
+            <div>
+                <label for="animationSpeed">Animation Speed:</label>
+                <select id="animationSpeed">
+                    <option value="slow">Slow</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="fast">Fast</option>
+                </select>
+            </div>
+            <button id="savePreferences">Save Preferences</button>
+        </div>
+    </div>
+        <script src="script.js"></script>
+
+</body>
+</html>
